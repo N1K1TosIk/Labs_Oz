@@ -1,0 +1,43 @@
+.App {
+  text-align: left;
+  padding: 1rem;
+  max-width: 1100px;
+}
+
+.App-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.bridges-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.bridges-table td,
+.bridges-table th {
+  border: 1px solid #333;
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+}
+
+.bridges-table thead th {
+  font-weight: 600;
+  background: #eee;
+}
+
+.table-pagination {
+  margin-top: 0.5rem;
+}
+
+.table-pagination .page-num {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.table-pagination .page-num-active {
+  font-weight: 700;
+  color: #1565c0;
+}

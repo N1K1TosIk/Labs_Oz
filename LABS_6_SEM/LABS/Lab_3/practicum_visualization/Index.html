@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <title>Список самых высоких зданий</title>
+  <link rel="stylesheet" href="CSS/style.css">
+  <script src="../d3.v7.min.js"></script>
+  <script src="JavaScript/data.js"></script>
+  <script src="JavaScript/table.js"></script>
+  <script src="JavaScript/chart.js"></script>
+  <script src="JavaScript/main.js"></script>
+</head>
+<body>
+  <h3>Список самых высоких зданий</h3>
+
+  <form id="settings-form" class="settings-form" novalidate>
+    <p>Значение по оси OX</p>
+    <label><input type="radio" name="ox" value="Страна" checked>Страна</label><br>
+    <label><input type="radio" name="ox" value="Год">Год</label>
+
+    <p id="oy-label">Значение по оси OY</p>
+    <div id="oy-group">
+      <label><input type="checkbox" name="oy" value="max" checked>Максимальная высота</label><br>
+      <label><input type="checkbox" name="oy" value="min">Минимальная высота</label>
+    </div>
+    <div id="oy-error" class="error-message"></div>
+
+    <p>Тип графика
+      <select name="chartType">
+        <option value="scatter" selected>Точечная диаграмма</option>
+        <option value="bar">Гистограмма</option>
+      </select>
+    </p>
+
+    <button type="submit">Построить</button>
+  </form>
+
+  <svg></svg>
+
+  <button id="toggle-table" type="button">Скрыть таблицу</button>
+  <table id="build"></table>
+</body>
+</html>

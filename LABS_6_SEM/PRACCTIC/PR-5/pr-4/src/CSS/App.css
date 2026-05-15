@@ -1,0 +1,85 @@
+.App {
+  text-align: left;
+  padding: 1rem;
+  max-width: 1100px;
+}
+
+.App-title {
+  margin: 0 0 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.chart-panel {
+  border: 1px solid #777;
+  background: #efefef;
+  padding: 0.75rem;
+  margin-bottom: 0.75rem;
+  max-width: 980px;
+}
+
+.chart-panel h4 {
+  margin: 0 0 0.6rem;
+}
+
+.chart-panel p {
+  margin: 0.5rem 0;
+}
+
+.chart-panel button {
+  font-size: 0.95rem;
+}
+
+.chart-error {
+  color: #b00020;
+  margin-top: 0.25rem;
+  font-size: 0.9rem;
+}
+
+svg {
+  width: 900px;
+  height: 460px;
+}
+
+svg path,
+line {
+  fill: none;
+  stroke: black;
+  width: 1px;
+}
+
+svg text {
+  font: 8px Verdana;
+}
+
+.bridges-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+
+.bridges-table td,
+.bridges-table th {
+  border: 1px solid #333;
+  padding: 0.4rem 0.5rem;
+  text-align: left;
+}
+
+.bridges-table thead th {
+  font-weight: 600;
+  background: #eee;
+}
+
+.table-pagination {
+  margin-top: 0.5rem;
+}
+
+.table-pagination .page-num {
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.table-pagination .page-num-active {
+  font-weight: 700;
+  color: #1565c0;
+}

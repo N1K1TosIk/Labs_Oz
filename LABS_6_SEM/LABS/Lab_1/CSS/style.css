@@ -1,0 +1,143 @@
+.forms-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem 3rem;
+    margin-bottom: 1.5rem;
+    font-family: sans-serif;
+}
+
+#filter {
+    font-family: sans-serif;
+}
+#filter h2 {
+    margin: 0 0 0.75rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+#filter p {
+    display: flex;
+    align-items: center;
+    margin: 0.4rem 0;
+    flex-wrap: wrap;
+    gap: 0 0.35rem;
+}
+#filter label {
+    flex-shrink: 0;
+    min-width: 70px;
+}
+#filter input[type="text"],
+#filter input[type="number"] {
+    padding: 2px 6px;
+    border: none;
+    outline: none;
+    background: #fff;
+}
+#filter input[type="text"] {
+    min-width: 140px;
+}
+#filter input[type="number"] {
+    width: 4rem;
+}
+#filter .filter-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+#filter input[type="button"] {
+    padding: 4px 12px;
+    cursor: pointer;
+    border: 1px solid #808080;
+    outline: none;
+    background: #d3d3d3;
+    color: #000;
+}
+
+#sort {
+    padding: 0.75rem 1rem;
+    background: #fff;
+    border: none;
+}
+#sort h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+}
+#sort p {
+    display: flex;
+    align-items: center;
+    margin: 0.4rem 0;
+    flex-wrap: wrap;
+    gap: 0 0.35rem;
+}
+#sort select {
+    margin-right: 0.25rem;
+    padding: 2px 4px;
+    border: none;
+    outline: none;
+    background: #fff;
+    min-width: 120px;
+}
+#sort select:disabled {
+    background: #e8e8e8;
+    color: #666;
+}
+#sort input[type="checkbox"] {
+    margin-left: 0.25rem;
+    border: none;
+}
+#sort input[type="checkbox"]:disabled {
+    opacity: 0.6;
+}
+#sort .sort-buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+#sort input[type="button"] {
+    padding: 4px 12px;
+    cursor: pointer;
+    border: 1px solid #808080;
+    outline: none;
+    background: #d3d3d3;
+    color: #000;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #808080;
+    font-family: sans-serif;
+    color: #000;
+}
+
+#list thead th {
+    background-color: #D3D3D3;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid #808080;
+}
+
+#list tbody tr:nth-child(odd) {
+    background-color: #F2F2F2;
+}
+
+#list tbody tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+
+#list tbody td:first-child {
+    text-align: left;
+}
+
+#list tbody td {
+    text-align: center;
+    padding: 10px 12px;
+    border: 1px solid #808080;
+}

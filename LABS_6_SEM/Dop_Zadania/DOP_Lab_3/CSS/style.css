@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 18px;
+}
+
+#run-btn {
+  margin-bottom: 12px;
+  padding: 6px 12px;
+}
+
+#scene {
+  border: 1px solid #a9a9a9;
+  background: #ffffff;
+  display: block;
+}

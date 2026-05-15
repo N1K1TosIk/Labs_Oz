@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+}
+
+.input-type-selector,
+.input-fields,
+.calc-options,
+.output-section {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+input, select {
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+label {
+    font-weight: bold;
+}
+
+.input-group {
+    margin-bottom: 10px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    min-height: 14px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons input {
+    padding: 8px;
+}
+
+.result-item {
+    margin: 5px 0;
+}
+
+.radio-group {
+    margin: 10px 0;
+}
+
+.radio-group label {
+    display: block;
+    margin: 5px 0;
+    font-weight: normal;
+}
+
+.radio-group input[type="radio"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+.calc-label {
+    display: block;
+    margin-bottom: 5px;
+}

@@ -1,0 +1,296 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #f5f5f5;
+    padding: 15px 20px;
+    border-bottom: 2px solid #ddd;
+}
+
+
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.logo {
+    display: inline-block;
+    width: 32%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+.menu {
+    display: inline-block;
+    width: 68%;
+    text-align: right;
+    vertical-align: middle;
+    white-space: nowrap;
+    font-size: 0;
+}
+
+.menu-item {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: #333;
+    padding: 12px 25px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 2%;
+    font-size: 16px;
+}
+
+.menu-item.active {
+    background-color: #4a90e2;
+    color: #fff;
+    border: 2px solid #4a90e2;
+}
+
+.image-section {
+    max-width: 1400px;
+    margin: 20px auto;
+    padding: 0 2%;
+    overflow: hidden;
+    font-size: 0;
+    height: 35vh;
+}
+
+.image-top {
+    height: 70%;
+    font-size: 0;
+}
+
+.large-block {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+    overflow: hidden;
+    height: 100%;
+}
+
+.large-block img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.right-blocks {
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 0;
+    height: 100%;
+}
+
+.small-block {
+    width: 100%;
+    overflow: hidden;
+    height: 50%;
+}
+
+.small-block img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.image-bottom {
+    height: 30%;
+    overflow: hidden;
+}
+
+.image-bottom img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.circles-section {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 2%;
+    text-align: justify;
+    font-size: 0;
+}
+
+.circles-section::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+}
+
+.circle-item {
+    display: inline-block;
+    width: 23%;
+    margin-bottom: 20px;
+    vertical-align: top;
+    font-size: 14px;
+    text-align: center;
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 15px;
+}
+
+.circle img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.circle-title {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.circle-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.content-blocks {
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 2%;
+    overflow: hidden;
+    clear: both;
+}
+
+.content-left {
+    width: 32%;
+    float: left;
+    margin-right: 2%;
+    border: 2px solid #333;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content-text {
+    padding: 5%;
+}
+
+.content-text h3 {
+    margin-bottom: 5%;
+}
+
+.content-text p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 5%;
+}
+
+.content-link {
+    display: inline-block;
+    padding: 2% 6%;
+    background-color: #4a90e2;
+    color: white;
+    font-weight: bold;
+    margin-top: 4%;
+    white-space: nowrap;
+}
+
+.content-link.align-right {
+    float: right;
+}
+
+.content-text::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+.content-center::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content-center {
+    width: 30%;
+    float: left;
+    margin-right: 2%;
+    padding: 5%;
+}
+
+.content-center h3 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.content-center p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 4%;
+}
+
+.content-right {
+    width: 34%;
+    float: right;
+}
+
+.right-item {
+    border: 2px solid #333;
+    margin-bottom: 2%;
+    padding: 2%;
+    overflow: hidden;
+}
+
+.right-image {
+    width: 32%;
+    float: left;
+    margin-right: 4%;
+}
+
+.right-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.right-text {
+    float: left;
+    width: 64%;
+}
+
+.right-text h3 {
+    margin-bottom: 8px;
+}
+
+.right-text p {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

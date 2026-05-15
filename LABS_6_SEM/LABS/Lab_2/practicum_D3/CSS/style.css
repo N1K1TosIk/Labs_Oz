@@ -1,0 +1,27 @@
+.hidden {
+  display: none;
+}
+
+#setting {
+  margin-bottom: 1em;
+}
+
+#setting p {
+  margin: 0.5em 0;
+}
+
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.form-row > div {
+  flex: 1;
+  min-width: 120px;
+}
+
+.form-controls input[type="number"] {
+  width: 4em;
+}

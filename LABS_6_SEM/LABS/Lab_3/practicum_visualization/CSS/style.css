@@ -1,0 +1,85 @@
+body {
+    background: #e6e6e6;
+    font-family: "Times New Roman", serif;
+    color: #000;
+}
+
+h3 {
+    margin: 8px 0 12px 0;
+    font-size: 28px;
+}
+
+.settings-form {
+    margin-bottom: 12px;
+}
+
+.settings-form p {
+    margin: 10px 0 8px;
+    font-size: 18px;
+}
+
+.settings-form label,
+.settings-form select,
+.settings-form button {
+    font-size: 16px;
+}
+
+.settings-form select {
+    vertical-align: middle;
+}
+
+.settings-form button,
+#toggle-table {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.error {
+    border: 1px solid red;
+}
+
+#oy-group {
+    padding: 6px;
+    width: fit-content;
+}
+
+.error-message {
+    color: red;
+    font-size: 13px;
+    min-height: 14px;
+    margin-top: 6px;
+}
+
+svg {
+    width: 800px;
+    height: 400px;
+    margin: 12px 0;
+}
+
+svg text {
+    font: 14px Verdana;
+}
+
+svg path,
+svg line {
+    fill: none;
+    stroke: #333333;
+    width: 1px;
+}
+
+table {
+    border-collapse: collapse;
+    margin-top: 10px;
+    min-width: 800px;
+}
+
+th,
+td {
+    border: 1px solid #8f8f8f;
+    padding: 8px 12px;
+    font-size: 16px;
+}
+
+th {
+    background: #c9c9c9;
+}

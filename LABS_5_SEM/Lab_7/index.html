@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Калькулятор комплексных чисел</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Калькулятор комплексных чисел</h1>
+
+        <div class="input-type-selector">
+            <label>Форма представления комплексного числа:</label>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="formType" value="exponential" checked>
+                    Показательная
+                </label>
+                <label>
+                    <input type="radio" name="formType" value="trigonometric">
+                    Тригонометрическая
+                </label>
+            </div>
+            <button type="button" id="applyFormTypeBtn">Показать</button>
+        </div>
+
+        <form name="calcForm">
+            <div class="input-fields">
+                <div class="input-group">
+                    <label id="labelR">Модуль (r):</label>
+                    <input type="number" name="r" step="any">
+                    <div class="error-message" id="errorR"></div>
+                </div>
+                <div class="input-group">
+                    <label id="labelPhi">Аргумент φ (в градусах):</label>
+                    <input type="number" name="phi" step="any">
+                    <div class="error-message" id="errorPhi"></div>
+                </div>
+            </div>
+
+            <div class="calc-options">
+                <label id="calcOptionsLabel" class="calc-label">Вычислить:</label>
+                <select id="calcOptions" multiple size="4">
+                    <option value="otherForm">Представление в другой форме</option>
+                    <option value="realPart">Действительную часть</option>
+                    <option value="imaginaryPart">Мнимую часть</option>
+                    <option value="argument">Аргумент числа</option>
+                </select>
+                <div class="error-message" id="errorOptions"></div>
+            </div>
+
+            <div class="buttons">
+                <input type="button" value="Вычислить" id="calculateBtn">
+                <input type="button" value="Очистить" id="clearBtn">
+            </div>
+        </form>
+
+        <div class="output-section">
+            <h2>Результаты:</h2>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

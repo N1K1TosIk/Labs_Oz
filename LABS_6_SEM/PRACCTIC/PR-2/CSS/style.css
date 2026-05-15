@@ -1,0 +1,5 @@
+body { margin: 1em; font-family: sans-serif; }
+form { margin-bottom: 1em; }
+form label { display: inline-block; width: 140px; }
+form input { margin-right: 1em; }
+input[type="number"] { width: 5em; }

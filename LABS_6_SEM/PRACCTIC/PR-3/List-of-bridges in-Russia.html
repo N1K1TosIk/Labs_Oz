@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Самые длинные мосты России</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="d3.v7.min.js"></script>
+  <script src="JavaScript/data.js" defer></script>
+  <script src="JavaScript/chart-data.js" defer></script>
+  <script src="JavaScript/chart-draw.js" defer></script>
+  <script src="JavaScript/chart-main.js" defer></script>
+  <script src="JavaScript/table-filters-sorting.js" defer></script>
+</head>
+<body>
+  <h1 align="center">Самые длинные мосты России</h1>
+    <a href="The-longest-bridges-in-Russia.html">Крупнейшие мосты России</a>
+    <hr>
+
+<details>
+  <summary>График</summary>
+	<br>
+	<form id="chart-form">
+		<label><strong>Значение по оси ОХ:</strong></label><br>
+		<input type="radio" name="chart_x" value="region" checked> Регион <br>
+		<input type="radio" name="chart_x" value="year"> Год открытия
+		<br><br>
+		<label><strong>Результат:</strong></label><br>
+		<div id="oy-group">
+			<input type="checkbox" name="chart_y" value="length_max" checked> Максимальная длина моста <br>
+			<input type="checkbox" name="chart_y" value="length_min"> Минимальная длина моста <br>
+			<input type="checkbox" name="chart_y" value="capacity_max"> Максимальная пропускная способность <br>
+			<input type="checkbox" name="chart_y" value="capacity_min"> Минимальная пропускная способность
+		</div>
+		<div id="oy-error" class="error-message"></div>
+		<br><br>
+		<label><strong>Тип графика:</strong></label>
+		<select name="chart_type">
+			<option value="scatter">Точечная диаграмма</option>
+			<option value="line">График</option>
+			<option value="bar">Столбчатая диаграмма</option>
+		</select>
+		<br><br>
+		<input type="submit" id="chart-build-btn" value="Построить график">
+	</form>
+	<svg id="chart-svg"></svg>
+</details>
+<br>
+
+<details>
+  <summary>Фильтр</summary>
+	<br>
+   <form>
+      <label>Название моста:</label>
+      <input type="text" name="name" id="name">
+   </form>
+<br>
+<form>
+      <label>Регион:</label>
+      <input type="text" name="region" id="region">
+</form>
+<br>
+<form>
+      <label>Год открытия:</label>
+      <input type="number" name="year" id="year">
+</form>
+<br>
+<form>
+      <label>Длина моста (км): от</label>
+      <input type="number" name="length_min" id="length_min">
+      <label>до</label>
+      <input type="number" name="length_max" id="length_max">
+</form>
+<br>
+<form>
+      <label>Пропускная способность (тыс. авто/сутки): от</label>
+      <input type="number" name="capacity_min" id="capacity_min">
+      <label>до</label>
+      <input type="number" name="capacity_max" id="capacity_max">
+</form>
+<br>
+<form>
+      <label>Тип моста:</label>
+      <input type="text" name="bridge_type" id="bridge_type">
+</form>
+<br>
+<input type="submit" value="Найти">
+<input type="button" value="Очистить фильтры">
+</details>
+<br>
+
+<details>
+<summary>Сортировка</summary>
+<br>
+
+<form>
+	<label>Первый уровень:</label>
+	<select name="sort1">
+	<option value="name">Название моста</option>
+	<option value="region">Регион</option>
+	<option value="year">Год открытия</option>
+	<option value="length">Длина, км</option>
+	<option value="type">Тип моста</option>
+	<option value="capacity">Пропускная способность</option>
+	<option value="0" selected> Нет </option>
+	</select>
+	<label>по убыванию?</label>
+	<input type="checkbox" name="sorting1" value="1">
+</form>
+<br>
+
+<form>
+	<label>Второй уровень:</label>
+	<select name="sort2">
+	<option value="name">Название моста</option>
+	<option value="region">Регион</option>
+	<option value="year">Год открытия</option>
+	<option value="length">Длина, км</option>
+	<option value="type">Тип моста</option>
+	<option value="capacity">Пропускная способность</option>
+	<option value="0" selected> Нет </option>
+	</select>
+	<label>по убыванию?</label>
+	<input type="checkbox" name="sorting2" value="2">
+</form>
+<br>
+
+<form>
+	<label>Третий уровень:</label>
+	<select name="sort3">
+	<option value="name">Название моста</option>
+	<option value="region">Регион</option>
+	<option value="year">Год открытия</option>
+	<option value="length">Длина, км</option>
+	<option value="type">Тип моста</option>
+	<option value="capacity">Пропускная способность</option>
+	<option value="0" selected> Нет </option>
+	</select>
+	<label>по убыванию?</label>
+	<input type="checkbox" name="sorting3" value="3">
+</form>
+<br>
+
+<input type="submit" value="Сортировать">
+<input type="button" value="Сбросить сортировку">
+</details>
+<br>
+
+<table border="1" cellspacing="0" cellpadding="5" width="100%">
+	<tr align="center" bgcolor="grey">
+		<th>Название моста</th>
+		<th>Регион</th>
+		<th>Год открытия</th>
+		<th>Длина, км</th>
+		<th>Тип моста</th>
+		<th>Пропускная способность (тыс. авто/сутки)</th>
+	</tr>
+</table>
+
+<hr>
+<p><strong>Выполнил студент группы Б9123-09.03.04(3) Сяськин Никита</strong></p>
+
+</body>
+</html>
