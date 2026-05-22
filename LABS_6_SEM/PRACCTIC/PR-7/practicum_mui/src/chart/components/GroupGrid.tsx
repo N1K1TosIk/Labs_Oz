@@ -11,9 +11,10 @@ function GroupGrid({ data }: GroupProps) {
   const rows: GridRowsProp = data;
   const columns: GridColDef[] = [
     { field: 'Группа', headerName: 'Группа', flex: 1 },
-    { field: 'Минимальная высота', flex: 0.5 },
-    { field: 'Максимальная высота', flex: 0.5 },
-    { field: 'Средняя высота', flex: 0.5 },
+    { field: 'Минимальная длина', flex: 0.5 },
+    { field: 'Максимальная длина', flex: 0.5 },
+    { field: 'Минимальная пропускная способность', flex: 0.7 },
+    { field: 'Максимальная пропускная способность', flex: 0.7 },
   ];
 
   return (
