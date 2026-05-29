@@ -3,35 +3,36 @@ import ReactDOM from 'react-dom/client';
 import {
   createBrowserRouter,
   RouterProvider,
-} from "react-router-dom";
-import List from "./list/List";
-import Main from "./main/Main";
-import Building from "./building/Building";
-import Chart from "./chart/Chart";
-import Testing from "./testing/Testing";
+} from 'react-router-dom';
 import { Provider } from 'react-redux';
+import reportWebVitals from './reportWebVitals';
 import store from './store';
+import Main from './main/Main';
+import List from './list/List';
+import Bridge from './bridge/Bridge';
+import Chart from './chart/Chart';
+import Testing from './testing/Testing';
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: '/',
     element: <Main />,
   },
   {
-    path: "/list",
+    path: '/list',
     element: <List />,
   },
   {
-    path: "/charts",
+    path: '/charts',
     element: <Chart />,
   },
   {
-    path: "/testing",
+    path: '/testing',
     element: <Testing />,
   },
   {
-    path: "/building/:id",
-    element: <Building />,
+    path: '/bridge/:id',
+    element: <Bridge />,
   },
 ]);
 
@@ -45,3 +46,5 @@ root.render(
     </Provider>
   </React.StrictMode>
 );
+
+reportWebVitals();

@@ -60,6 +60,9 @@ function Navbar({ active }: ComponentProps) {
             <Button component={Link} to="/charts" variant={active === '3' ? 'contained' : 'text'} color="info" size="medium">
               Диаграммы
             </Button>
+            <Button component={Link} to="/testing" variant={active === '4' ? 'contained' : 'text'} color="info" size="medium">
+              Проверь себя
+            </Button>
           </Box>
 
           <Box sx={{ display: { xs: 'flex', md: 'none' } }}>
@@ -87,6 +90,7 @@ function Navbar({ active }: ComponentProps) {
                   <MenuItem component={Link} to="/" selected={active === '1'} onClick={toggleDrawer(false)} sx={{ '&:hover': { color: '#5d8aa8' } }}>Главная</MenuItem>
                   <MenuItem component={Link} to="/list" selected={active === '2'} onClick={toggleDrawer(false)} sx={{ '&:hover': { color: '#5d8aa8' } }}>Список зданий</MenuItem>
                   <MenuItem component={Link} to="/charts" selected={active === '3'} onClick={toggleDrawer(false)} sx={{ '&:hover': { color: '#5d8aa8' } }}>Диаграммы</MenuItem>
+                  <MenuItem component={Link} to="/testing" selected={active === '4'} onClick={toggleDrawer(false)} sx={{ '&:hover': { color: '#5d8aa8' } }}>Проверь себя</MenuItem>
                 </MenuList>
               </Box>
             </Drawer>
