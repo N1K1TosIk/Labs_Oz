@@ -24,9 +24,7 @@ function Matching({ tasks, index, resetKey, type }: ComponentProps) {
   useEffect(() => {
     const shuffled = shuffleAnswers(initialItems);
     setAnswers(shuffled);
-    // add list to store for this quiz index
     dispatch(addList({ index, items: shuffled }));
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [dispatch, index, resetKey]);
 
   if (type === 'S') {
